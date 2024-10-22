@@ -1,0 +1,544 @@
+.home-page-container {
+  min-height: 100vh;
+  width: 100vw;
+  background-image: url('https://assets.ccbp.in/frontend/react-js/nxt-slides/monthly-emojis-bg.png');
+  background-size: cover;
+}
+
+.home-container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.home-heading {
+  color: #ffbe38;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.month-mood-container {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mood-month-calendar-container {
+  background: linear-gradient(
+    142.42deg,
+    rgba(114, 104, 117, 0.21) 1.79%,
+    rgba(117, 116, 117, 0) 100.42%
+  );
+  border-image-source: linear-gradient(
+    139.28deg,
+    rgba(19, 18, 18, 0.28) 2.05%,
+    rgba(53, 51, 51, 0) 92.82%
+  );
+  backdrop-filter: blur(116px);
+  box-shadow: 6.82px 6.82px 16.37px 0px #51515166 inset;
+
+  min-height: 40vh;
+  width: 95vw;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin: 0px;
+}
+
+.month-name {
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.mood-month-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.month-nav-button {
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+  font-size: 24px;
+}
+
+.month-nav-icons {
+  height: 22px;
+  width: 22px;
+}
+
+.days-list-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1px;
+  margin: 0px;
+  padding: 0px;
+  margin-left: 7px;
+}
+
+.day-name-list {
+  color: #ffffff;
+  list-style-type: none;
+  text-align: center;
+  box-sizing: border-box;
+  width: 35px;
+  height: 20px;
+  border-radius: 5px;
+}
+
+.day-name {
+  color: #ffffff;
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.day-mood-emoji {
+  height: 10px;
+  width: 10px;
+}
+
+.dates-list-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1px;
+  margin: 0px;
+  padding: 0px;
+  margin-left: 7px;
+}
+
+.date-button {
+  border: none;
+  background-color: transparent;
+}
+
+.mood-date {
+  background: #343243;
+  margin: 5px 0;
+  color: #ffffff;
+  list-style-type: none;
+  height: 20px;
+  width: 35px;
+  font-size: 13px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 3px 4px;
+  cursor: pointer;
+}
+
+.day-mood-emoji {
+  height: 15px;
+  width: 15px;
+}
+
+.set-day-mood-section-container {
+  min-height: 40vh;
+  width: 95vw;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.emoji-container {
+  height: 22vh;
+  margin-top: 5px;
+  width: 95vw;
+  background: linear-gradient(
+    142.42deg,
+    rgba(114, 104, 117, 0.21) 1.79%,
+    rgba(117, 116, 117, 0) 100.42%
+  );
+  border-image-source: linear-gradient(
+    139.28deg,
+    rgba(19, 18, 18, 0.28) 2.05%,
+    rgba(53, 51, 51, 0) 92.82%
+  );
+  backdrop-filter: blur(116px);
+  margin-bottom: 12px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px;
+}
+
+.emoji-item {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 60%;
+}
+
+.select-emoji-button {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.emoji-name {
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.emoji-url {
+  height: 25px;
+  width: 25px;
+}
+
+.active-select-emoji-button {
+  background-image: radial-gradient(#c7b1b1, #42404d);
+  border-radius: 50%;
+}
+
+.emoji-url:hover {
+  transform: scale(1.5);
+}
+
+.mood-editor-container {
+  height: 25vh;
+  width: 95vw;
+  background: linear-gradient(
+    142.42deg,
+    rgba(114, 104, 117, 0.21) 1.79%,
+    rgba(117, 116, 117, 0) 100.42%
+  );
+  border-image-source: linear-gradient(
+    139.28deg,
+    rgba(19, 18, 18, 0.28) 2.05%,
+    rgba(53, 51, 51, 0) 92.82%
+  );
+  backdrop-filter: blur(116px);
+  border-radius: 10px;
+  padding: 6px;
+}
+
+.select-elements-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.select-element {
+  position: relative;
+  background: #42404d;
+  width: 90vw;
+  outline: none;
+  color: #ffffff;
+  height: 35px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1px 3px 1px 10px;
+  border: 1px solid #4e5d72;
+  box-shadow: 0px 1px 2px 0px #00000014;
+  z-index: 1;
+}
+
+.options-element {
+  appearance: none;
+  width: 100%;
+  margin: 0px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 3px 2px 10px;
+  height: 40px;
+}
+
+.active-option-element {
+  color: #ffbe38;
+}
+
+.options-element:hover {
+  background-color: transparent !important;
+}
+
+.dropdown-button {
+  color: #f0f0f0;
+  background-color: transparent;
+  border: none;
+}
+
+.options-element:hover {
+  background-image: radial-gradient(#4e5d72 21%, #4e5d72 0%);
+}
+
+.selected-date {
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/*media query for medium devices*/
+
+@media screen and (min-width: 480px) {
+  .home-heading {
+    font-size: 28px;
+  }
+  .mood-month-calendar-container {
+    height: 50vh;
+    width: 90vw;
+  }
+  .day-name {
+    font-size: 12px;
+    width: 55px;
+    height: 25px;
+    border-radius: 5px;
+  }
+  .mood-date {
+    height: 28px;
+    width: 55px;
+    font-size: 15px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .day-mood-emoji {
+    height: 18px;
+    width: 18px;
+  }
+  .month-mood-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .set-day-mood-section-container {
+    min-height: 50vh;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .emoji-container {
+    height: 27vh;
+    width: 90vw;
+    margin-top: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  .emoji-name {
+    color: #ffffff;
+    font-size: 17px;
+  }
+  .emoji-url {
+    height: 33px;
+    width: 33px;
+  }
+  .emoji-button {
+    padding-top: 5px;
+    padding-left: 4px;
+    border-radius: 25px;
+  }
+  .mood-editor-container {
+    height: 27vh;
+    width: 90vw;
+    padding: 6px;
+  }
+
+  .select-elements-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .select-element {
+    width: 88vw;
+    font-size: 15px;
+  }
+  .options-element {
+    width: 88vw;
+    font-size: 15px;
+  }
+
+  .selected-date {
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .home-heading {
+    color: #ffbe38;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  .month-mood-container {
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mood-month-calendar-container {
+    height: 60vh;
+    width: 60vw;
+    max-width: 600px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 0px;
+  }
+
+  .month-name {
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .mood-month-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .month-mav-button {
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    font-size: 24px;
+  }
+
+  .month-nav-icons {
+    height: 22px;
+    width: 22px;
+  }
+
+  .days-list-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1px;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 10px;
+  }
+
+  .day-name {
+    color: #ffffff;
+    list-style-type: none;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 14px;
+    width: 65px;
+    height: 30px;
+    border-radius: 7px;
+  }
+
+  .day-mood-emoji {
+    height: 10px;
+    width: 10px;
+  }
+
+  .dates-list-container {
+    margin-left: 10px;
+  }
+
+  .mood-date {
+    font-size: 16px;
+    width: 60px;
+    height: 30px;
+  }
+  .day-mood-emoji {
+    height: 16px;
+    width: 16px;
+    margin-left: 1px;
+  }
+
+  .set-day-mood-section-container {
+    height: 60vh;
+    width: 35vw;
+    margin-left: 9px;
+  }
+  .emoji-container {
+    height: 30vh;
+    width: 35vw;
+    padding: 8px;
+    margin-top: 0px;
+  }
+  .emoji-name {
+    color: #ffffff;
+    font-size: 13px;
+  }
+  .emoji-url {
+    height: 30px;
+    width: 30px;
+  }
+  .emoji-button {
+    padding-top: 5px;
+    padding-left: 4px;
+  }
+  .mood-editor-container {
+    height: 30vh;
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .select-elements-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .select-element {
+    width: 16vw;
+    font-size: 15px;
+  }
+
+  .select-unorder-elements-container {
+    width: 100%;
+  }
+  .options-element {
+    width: 16vw;
+    font-size: 15px;
+  }
+
+  .selected-date {
+    font-size: 28px;
+  }
+}
